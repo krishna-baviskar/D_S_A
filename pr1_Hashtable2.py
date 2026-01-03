@@ -14,7 +14,7 @@ class QuadraticProbingHashTable(HashTable):
 
     def insert(self, key, value):
         index = self.hash(key)
-        i = 0
+        i = 0 
         comparisons = 0
         while self.table[(index + i * i) % self.size] is not None:
             comparisons += 1
